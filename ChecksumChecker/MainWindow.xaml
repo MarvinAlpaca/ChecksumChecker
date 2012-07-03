@@ -1,12 +1,13 @@
 ﻿<Window x:Class="ChecksumChecker.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:ViewModel="clr-namespace:ChecksumChecker.ViewModel"
         xmlns:local="clr-namespace:ChecksumChecker"
         Title="MainWindow" Height="350" Width="525">
     <Window.DataContext>
-        <local:ChecksumDetailsViewModel />
+        <ViewModel:ChecksumDetailsViewModel />
     </Window.DataContext>
     <StackPanel>
         <local:ChecksumDetailsView Height="293" Width="403" />
     </StackPanel>
-</Window>
+</Window> 

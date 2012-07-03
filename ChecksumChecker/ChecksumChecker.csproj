@@ -56,7 +56,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Infrastructure\ObservableObject.cs" />
+    <Compile Include="Command\BrowseFileCommand.cs" />
     <Page Include="ChecksumDetailsView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -69,12 +69,14 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Command\ComputeChecksumCommand.cs" />
+    <Compile Include="ComputeChecksum.cs" />
+    <Compile Include="FileHelpers.cs" />
+    <Compile Include="Model\ChecksumModel.cs" />
     <Compile Include="ChecksumDetailsView.xaml.cs">
       <DependentUpon>ChecksumDetailsView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ChecksumDetailsViewModel.cs" />
-    <Compile Include="Infrastructure\PropertySupport.cs" />
-    <Compile Include="Infrastructure\RelayCommand.cs" />
+    <Compile Include="ViewModel\ChecksumDetailsViewModel.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
